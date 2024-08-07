@@ -1,0 +1,64 @@
+<script>
+export default {
+	props: {
+		type: {
+			type: String,
+			required: false,
+			default: 'primary'
+		},
+		label: {
+			type: String,
+			required: true
+		},
+		showIcon: {
+			type: Boolean,
+			required: false,
+			default: false
+		},
+		icon: {
+			type: String,
+			required: false,
+			default: ''
+		}
+	},
+	computed: {
+		classIcon() {
+			return `pi pi-${this.icon}`;
+		}
+	}
+};
+</script>
+
+<template>
+	<button :class="type" class="button">
+		{{ label }}
+		<i
+			v-if="showIcon"
+			class="icon"
+			:class="classIcon"
+		/>
+	</button>
+</template>
+
+<style lang="scss" scoped>
+button {
+	color: var(--white);
+	border: none;
+	border-radius: 6px;
+	padding: 5px 10px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.primary {
+	background-color: var(--primary);
+}
+.secondary {
+	background-color: var(--grey);
+}
+.icon {
+	font-size: 1rem;
+	margin-left: 5px;
+}
+</style>

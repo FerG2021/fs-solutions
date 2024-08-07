@@ -1,13 +1,21 @@
 <script>
-import { mapGetters } from 'vuex';
+import MainHeader from './components/MainHeader.vue';
+import Home from './modules/home/Home.vue';
 
-export default { computed: {	...mapGetters('CarsStore', ['cars']) } };
+export default {
+	components: {
+		MainHeader,
+		Home
+	}
+};
 </script>
 
 <template>
-	<div>Header</div>
-	{{ cars }}
-	<router-view></router-view>
+	<div class="main-container">
+		<MainHeader />
+		<Home />
+	</div>
+	<!-- <router-view></router-view> -->
 </template>
 
 <style lang="scss">

@@ -10,17 +10,6 @@ export default function loadModules(router) {
 		store: false,
 		showInHome: false,
 		menuItem: true
-	},
-	{
-		name: 'cars',
-		componentName: 'Cars',
-		title: 'Vehículos',
-		path: '/cars',
-		icon: 'directions_car',
-		store: true,
-		showInHome: true,
-		menuItem: true,
-		loadedMethod: api.getAllCars
 	}];
 
 	modules.forEach(module => {

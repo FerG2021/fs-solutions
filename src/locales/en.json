@@ -1,3 +1,98 @@
 {
-	"HELLO": "Hello"
+	"SECTIONS": {
+		"HOME": "Home",
+		"HOW_WORK": "How we work",
+		"SERVICES": "Services",
+		"PROJECTS": "Projects",
+		"ABOUT_US": "About us",
+		"FOLLOW_US": "Follow us",
+		"CONTACT_US": "Contact us"
+	},
+	
+	"BOOK_A_MEETING": "Book a meeting",
+	"MEET_US": "Meet us",
+	"SOFTWARE_SOLUTIONS": "Software solutions",
+	
+	"MAIN_LEGEND": "We turn your ideas into software",
+	"SECONDARY_LEGEND": "FSsolutions is a software development company that provides solutions for everyone, everywhere.",
+	"PROJECTS": "Projects",
+
+	"HOW_WE_WORK": "How we work",
+	"HOW_WE_WORK_INFORMATION": "Imagine us as part of your team, not as an external provider. Together, we will make your ideas come true without complications. You only need to follow three steps to achieve it",
+
+	"FIRST_STEP": {
+		"TITLE": "First meet",
+		"DESCRIPTION": "The first step is to have a meeting to understand your needs and requirements. We will discuss the project and establish a budget." 
+	},
+	"SECOND_STEP": {
+		"TITLE": "We start with the project",
+		"DESCRIPTION": "If you agree with our budget and timeline, our design and development team will begin working on your idea." 
+	},
+	"THIRD_STEP": {
+		"TITLE": "The results",
+		"DESCRIPTION": "We will have periodic meetings to show you the progress of your project." 
+	},
+
+	"SERVICES": {
+		"TITLE": "Our services",
+		"DESCRIPTION": "We offer software solutions for all types of clients. If you can dream it, we can make it happen. We work from the beginning to the launch."
+	},
+
+	"FIRST_SERVICE_ITEM": {
+		"TITLE": "Software development for companies",
+		"DESCRIPTION": "Boost your company's growth with software solutions, meticulously designed to ensure business success."
+	},
+	"SECOND_SERVICE_ITEM": {
+		"TITLE": "Ecommerce",
+		"DESCRIPTION": "Our ecommerce solutions simplify and optimize transactions, offering customers a complete and satisfactory shopping experience."
+	},
+	"THIRD_SERVICE_ITEM": {
+		"TITLE": "Landing page",
+		"DESCRIPTION": "Impact from the first click. Our landing pages are strategically crafted to convert visitors into committed customers."
+	},
+	"FOURTH_SERVICE_ITEM": {
+		"TITLE": "Management panels",
+		"DESCRIPTION": "Optimizes control and efficiency. Our management panels are designed to simplify administration and improve decision making"
+	},
+
+	"PROJECTS_SECTION": {
+		"TITLE": "Solutions developed and turned into reality.",
+		"DESCRIPTION": "Each client is essential for us. Our team takes care of each project from start to finish with very good results. Come check it out for yourself."
+	},
+
+	"ABOUT_US_SECTION": {
+		"HEADER": "ABOUT US",
+		"TITLE": "How nice to see you here!",
+		"FG_DESCRIPTION": "Hello everyone, I am Fernando Gonzalez, creator of FSsolutions. It is a pleasure to be here to talk to you about our company. FSsolutions is a software development company, created from scratch with the aim of helping clients around the world transform their ideas into innovative technological solutions.",
+		"WORK_TOGETHER": "let's work together"
+	},
+
+	"LINE_TIME": {
+		"FIRST_TIME": {
+			"YEAR": "2018",
+			"TITLE": "Beginnings",
+			"DESCRIPTION": "From our humble beginnings, we have grown into a software development team that strives to deliver high-quality products and tailored solutions to meet the needs of our customers."
+		},
+		"SECOND_TIME": {
+			"YEAR": "",
+			"TITLE": "Our team",
+			"DESCRIPTION": "We have a small, diverse team of developers, designers and project managers. This compact structure allows us to work in an agile and personalized way, offering innovative and high-quality solutions."
+		},
+		"THIRD_TIME": {
+			"YEAR": "2019",
+			"TITLE": "Developing solutions",
+			"DESCRIPTION": "We have had the privilege of working with clients from diverse industries, from startups to large corporations, providing solutions that have fueled their growth and success."
+		},
+		"FOURTH_TIME": {
+			"YEAR": "2024",
+			"TITLE": "Our mission continues",
+			"DESCRIPTION": "At FSsolutions, we are committed to continuous innovation and expansion of our services to continue offering cutting-edge solutions that help our clients achieve their goals."
+		}
+	},
+
+	"FOLLOW_US_SECTION": {
+		"TITLE": "Connect with us",
+		"DESCRIPTION": "Join our community on social networks, where we share our passion for software development and design with hundreds of users like you. Come and collaborate with us!"
+	}
+
 }

@@ -1,3 +1,112 @@
 {
-	"HELLO": "Hola"
+	"SECTIONS": {
+		"HOME": "Home",
+		"HOW_WORK": "Cómo trabajamos",
+		"SERVICES": "Servicios",
+		"PROJECTS": "Proyectos",
+		"ABOUT_US": "Quiénes somos",
+		"FOLLOW_US": "Seguinos",
+		"CONTACT_US": "Contactanos"
+	},
+	
+	"BOOK_A_MEETING": "Reservar una reunión",
+	"MEET_US": "Contactanos",
+	"SOFTWARE_SOLUTIONS": "Soluciones de software",
+	
+	"MAIN_LEGEND": "Convertimos tus ideas en software",
+	"SECONDARY_LEGEND": "FSsolutions es una empresa de desarrollo de software que proporciona soluciones para todos, en todas partes.",
+	"PROJECTS": "Proyectos",
+
+	"HOW_WE_WORK": "Cómo trabajamos",
+	"HOW_WE_WORK_INFORMATION": "Imagínanos como parte de tu equipo, no como un proveedor externo. Juntos, vamos a hacer realidad tus ideas sin complicaciones. Solo necesitas seguir tres pasos para lograrlo",
+
+	"FIRST_STEP": {
+		"TITLE": "Primer encuentro",
+		"DESCRIPTION": "El primer paso es tener una reunión para comprender tus necesidades y requisitos. Discutiremos el proyecto y estableceremos un presupuesto." 
+	},
+	"SECOND_STEP": {
+		"TITLE": "Comenzamos con el proyecto",
+		"DESCRIPTION": "Si estás de acuerdo con nuestro presupuesto y linea de tiempo, nuestro equipo de diseño y desarrollo comenzará a trabajar tu idea." 
+	},
+	"THIRD_STEP": {
+		"TITLE": "Los resultados",
+		"DESCRIPTION": "Tendremos reuniones periodicas para mostrarte los avances de tu proyecto. " 
+	},
+
+	"SERVICES": {
+		"TITLE": "Nuestros servicios",
+		"DESCRIPTION": "Ofrecemos soluciones de software para todo tipo de clientes. Si puedes soñarlo, podemos hacerlo realidad. Trabajamos desde el inicio hasta el lanzamiento."
+	},
+
+	"FIRST_SERVICE_ITEM": {
+		"TITLE": "Desarrollo de software para empresas",
+		"DESCRIPTION": "Impulsa el crecimiento de tu empresa con soluciones de software, diseñadas meticulosamente para asegurar el éxito empresarial."
+	},
+	"SECOND_SERVICE_ITEM": {
+		"TITLE": "Ecommerce",
+		"DESCRIPTION": "Nuestras soluciones de ecommerce simplifican y optimizan las transacciones, ofreciendo a los clientes una experiencia de compra completa y satisfactoria."
+	},
+	"THIRD_SERVICE_ITEM": {
+		"TITLE": "Landing page",
+		"DESCRIPTION": "Impactá desde el primer clic. Nuestras landing pages están estratégicamente elaboradas para convertir visitantes en clientes comprometidos."
+	},
+	"FOURTH_SERVICE_ITEM": {
+		"TITLE": "Paneles de gestión",
+		"DESCRIPTION": "Optimiza el control y la eficiencia. Nuestros paneles de gestión están diseñados para simplificar la administración y mejorar la toma de decisiones"
+	},
+
+	"PROJECTS_SECTION": {
+		"TITLE": "Soluciones desarrolladas y convertidas en realidad.",
+		"DESCRIPTION": "Cada cliente es fundamental para nosotros. Nuestro equipo se encarga de cada proyecto de principio a fin con resultados muy buenos. Veni a comprobarlo vos mismo."
+	},
+
+	"ABOUT_US_SECTION": {
+		"HEADER": "QUIÉNES SOMOS",
+		"TITLE": "¡Que gusto verte por aqui!",
+		"FG_DESCRIPTION": "Hola a todos, soy Fernando Gonzalez, creador de FSsolutions. Es un placer estar aquí para hablarles sobre nuestra empresa. FSsolutions es una empresa dedicada al desarrollo de software, creada desde cero con el objetivo de ayudar a clientes de todo el mundo a transformar sus ideas en soluciones tecnológicas innovadoras.",
+		"WORK_TOGETHER": "Trabajemos juntos"
+	},
+
+	"LINE_TIME": {
+		"FIRST_TIME": {
+			"YEAR": "2018",
+			"TITLE": "Comienzos",
+			"DESCRIPTION": "Desde nuestros humildes comienzos, hemos crecido hasta convertirnos en un equipo en desarrollo de software que se esfuerza por ofrecer productos de alta calidad y soluciones a medida para satisfacer las necesidades de nuestros clientes."
+		},
+		"SECOND_TIME": {
+			"YEAR": "",
+			"TITLE": "Nuestro equipo",
+			"DESCRIPTION": "Contamos con un equipo pequeño y diverso de desarrolladores, diseñadores y gestores de proyectos. Esta estructura compacta nos permite trabajar de manera ágil y personalizada, ofreciendo soluciones innovadoras y de alta calidad."
+		},
+		"THIRD_TIME": {
+			"YEAR": "2019",
+			"TITLE": "Desarrollando soluciones",
+			"DESCRIPTION": "Hemos tenido el privilegio de trabajar con clientes de diversas industrias, desde startups hasta grandes corporaciones, proporcionando soluciones que han impulsado su crecimiento y éxito."
+		},
+		"FOURTH_TIME": {
+			"YEAR": "2024",
+			"TITLE": "Nuestra misión continua",
+			"DESCRIPTION": "En FSsolutions, estamos comprometidos con la innovación continua y la expansión de nuestros servicios para seguir ofreciendo soluciones de vanguardia que ayuden a nuestros clientes a alcanzar sus objetivos."
+		}
+	},
+
+	"FOLLOW_US_SECTION": {
+		"TITLE": "Conectate con nosotros",
+		"DESCRIPTION": "Unite a nuestra comunidad en redes sociales, donde compartimos nuestra pasión por el desarrollo y diseño de software con cientos de usuarios como vos. ¡Vení y colabora con nosotros!"
+	},
+
+	"CONTACT_US_SECTION": {
+		"WHATSAPP": {
+			"TITLE": "WhatsApp",
+			"SUBTITLE": "3843407142"
+		},
+		"EMAIL": {
+			"TITLE": "E-mail",
+			"SUBTITLE": "fssolutions.jmgmail.com"
+		},
+		"LOCATION": {
+			"TITLE": "Dirección",
+			"SUBTITLE": "Buenos Aires, Argentina"
+		}
+	}
 }
