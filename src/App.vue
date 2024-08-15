@@ -21,7 +21,7 @@ export default {
 <style lang="scss">
 @import url('./assets/colors.css');
 
-* {
+body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;

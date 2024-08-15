@@ -1,4 +1,6 @@
 <script>
+import { goToCalendly } from '../utils/utils';
+
 import DynamicButton from './DynamicButton.vue';
 
 export default {
@@ -31,6 +33,9 @@ export default {
 			}
 
 			this.openSideBar();
+		},
+		clickMeetButton() {
+			goToCalendly();
 		}
 	}
 };
@@ -66,18 +71,16 @@ export default {
 					</template>
 
 					<div class="iteraction-buttons-container">
-						<DynamicButton
-							:type="'secondary'"
-							:label="$t('MEET_US')"
-							:showIcon="false"
-						/>
-
-						<DynamicButton
-							:type="'primary'"
-							:label="$t('BOOK_A_MEETING')"
-							:showIcon="true"
-							:icon="'calendar'"
-						/>
+						<div class="dynamic-button-container">
+							<DynamicButton
+								:type="'primary'"
+								:label="$t('BOOK_A_MEETING')"
+								:showIcon="true"
+								:icon="'calendar'"
+								@click="clickMeetButton()"
+								class="button"
+							/>
+						</div>
 					</div>
 				</div>
 
@@ -117,7 +120,16 @@ export default {
 		}
 		.iteraction-buttons-container {
 			display: flex;
-			justify-content: space-evenly;
+			justify-content: center;
+			.dynamic-button-container {
+				width: 70%;
+				display: flex;
+				flex-direction: column;
+				.button {
+					margin-bottom: 10px;
+					height: 40px;
+				}
+			}
 		}
 	}
 }

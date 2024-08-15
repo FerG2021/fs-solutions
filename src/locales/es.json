@@ -35,7 +35,8 @@
 
 	"SERVICES": {
 		"TITLE": "Nuestros servicios",
-		"DESCRIPTION": "Ofrecemos soluciones de software para todo tipo de clientes. Si puedes soñarlo, podemos hacerlo realidad. Trabajamos desde el inicio hasta el lanzamiento."
+		"DESCRIPTION": "Ofrecemos soluciones de software para todo tipo de clientes. Si puedes soñarlo, podemos hacerlo realidad. Trabajamos desde el inicio hasta el lanzamiento.",
+		"FINAL_MESSAGE": "Reservá una reunión y empezá tu recorrido con nosotros"
 	},
 
 	"FIRST_SERVICE_ITEM": {
@@ -57,7 +58,23 @@
 
 	"PROJECTS_SECTION": {
 		"TITLE": "Soluciones desarrolladas y convertidas en realidad.",
-		"DESCRIPTION": "Cada cliente es fundamental para nosotros. Nuestro equipo se encarga de cada proyecto de principio a fin con resultados muy buenos. Veni a comprobarlo vos mismo."
+		"DESCRIPTION": "Cada cliente es fundamental para nosotros. Nuestro equipo se encarga de cada proyecto de principio a fin con resultados muy buenos. Veni a comprobarlo vos mismo.",
+		"LALA": {
+			"DESCRIPTION": "Desarrollo de un panel de gestión que permite tener el control de stock de los productos con su precio, características, detalles, etc., lista de clientes y sus cuentas corrientes y permitir la venta de sus productos, el software informa mediante notificaciones cuando queda poco stock de un determinado producto, un cliente se atrasa en una cuota de su cuenta corriente. Además permite exportar en PDF la lista de clientes y productos, y enviar por WhatsApp un pdf del detalle de la cuenta corriente a los clientes.",
+			"TECHNOLOGIES": "Vue.js, Vuex, Vue-Router, HTML, CSS, Javascript, Laravel, PHP, MySQL,"
+		},
+		"MODULAR": {
+			"DESCRIPTION": "Desarrollo de un panel de gestión que permite a los empleados realizar una comparativa de productos de diferentes proveedores, al terminar de realizar la carga el panel muestra al usuario la mejor opción de compra según distintos valores. Además al generar una nueva presupuestación se le envía a los diferentes proveedores un mail con un link de acceso, para que puedan ingresar y cargar sus precios para los diferentes productos.",
+			"TECHNOLOGIES": "Vue.js, Vuex, Vue-Router, HTML, CSS, Javascript, Laravel, PHP, MySQL, PHPMyAdmin"
+		},
+		"BURGUER": {
+			"DESCRIPTION": "Desarrollo de una carta digital con carrito de compra que permite a los clientes seleccionar los productos y la cantidad que desean adquirir. Los encargados de los locales comerciales que adquieren estos productos disponen de un panel de gestión para poder agregar, modificar y eliminar productos, categorías y promociones.",
+			"TECHNOLOGIES": "Vue.js, Vuex, Vue-Router, HTML, CSS, Javascript, Laravel, PHP, MySQL, PHPMyAdmin"
+		},
+		"LALO": {
+			"DESCRIPTION": "Desarrollo de una landing page que permite visualizar el stock disponible de vehículos junto con los detalles de los mismos. Además los empleados de la firma tienen acceso a un panel de gestión para crear, actualizar y modificar los vehículos, marcas y categorías, que se ven reflejados directamente en la landing page, como también tener un control de cuotas de sus clientes. Muestra notificaciones cuando es el cumpleaños de un cliente o se le vence una cuota.",
+			"TECHNOLOGIES": "Vue.js, Vuex, Vue-Router, HTML, CSS, Javascript, Laravel, PHP, MySQL, PHPMyAdmin"
+		}
 	},
 
 	"ABOUT_US_SECTION": {
@@ -107,6 +124,36 @@
 		"LOCATION": {
 			"TITLE": "Dirección",
 			"SUBTITLE": "Buenos Aires, Argentina"
+		},
+		"FORM": {
+			"TITLE": "¿Tenés alguna duda?",
+			"SUBTITLE": "Envianos un mensaje",
+			"NAME": "Nombre",
+			"EMAIL": "E-mail",
+			"PHONE": "Teléfono",
+			"MESSAGE": "Escribí tu mensaje",
+			"SUBMIT": "Enviar"
+		}
+	},
+
+	"FINAL_MESSAGE_SECTION": {
+		"TITLE": "¿Listo para desarrollar tus ideas?",
+		"MESSAGE": "Estamos aquí para ayudarte a dar vida a tus ideas con nuestra experiencia en desarrollo y diseño de software."
+	},
+
+	"FOOTER_SECTION": {
+		"MESSAGE": "FSsolutions es una empresa de desarrollo de software que proporciona soluciones para todos, en todas partes.",
+		"COMUNITY_ITEMS": {
+			"INSTAGRAM": "Instagram",
+			"FACEBOOK": "Facebook",
+			"LINKEDIN": "LinkedIn"
+		},
+		"RESOURCES_ITEMS": {
+			"PRIVACY_POLICIES": "Política de privacidad"
+		},
+		"COPYRIGHT": {
+			"COPYRIGHT": "©Copyright",
+			"RIGHTS_RESERVED": "2024 - Todos los derechos reservados"
 		}
 	}
 }

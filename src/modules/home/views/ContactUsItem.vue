@@ -45,19 +45,42 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.contact-us-item {
-	display: flex;
-	.icon-container {
-		padding: 10px;
-		.icon {
-			font-size: 3rem;
+/* DESKTOP*/
+@media only screen and (min-width: 801px) {
+	.contact-us-item {
+		display: flex;
+		.icon-container {
+			padding: 10px;
+			.icon {
+				font-size: 3rem;
+			}
+		}
+		.information-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			padding: 10px;
 		}
 	}
-	.information-container {
+}
+
+/* MOBILE */
+@media only screen and (max-width: 800px) {
+	.contact-us-item {
 		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		padding: 10px;
+		.icon-container {
+			padding: 10px;
+			.icon {
+				font-size: 3rem;
+			}
+		}
+		.information-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			padding: 10px;
+		}
 	}
 }
+
 </style>

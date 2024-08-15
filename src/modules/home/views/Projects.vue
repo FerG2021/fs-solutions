@@ -19,22 +19,30 @@ export default {
 				{
 					image: LalaDecoKids,
 					title: 'Lala Deco Kids',
-					subtitle: 'Lala Deco Kids subtitle'
+					subtitle: 'Lala Deco Kids subtitle',
+					description: this.$t('PROJECTS_SECTION.LALA.DESCRIPTION'),
+					technologies: this.$t('PROJECTS_SECTION.LALA.TECHNOLOGIES')
 				},
 				{
 					image: Modular,
 					title: 'ModulAr',
-					subtitle: 'ModulAr subtitle'
+					subtitle: 'ModulAr subtitle',
+					description: this.$t('PROJECTS_SECTION.MODULAR.DESCRIPTION'),
+					technologies: this.$t('PROJECTS_SECTION.MODULAR.TECHNOLOGIES')
 				},
 				{
 					image: Lalo,
 					title: 'Lalo Automotores',
-					subtitle: 'Lalo Automotores subtitle'
+					subtitle: 'Lalo Automotores subtitle',
+					description: this.$t('PROJECTS_SECTION.LALO.DESCRIPTION'),
+					technologies: this.$t('PROJECTS_SECTION.LALO.TECHNOLOGIES')
 				},
 				{
 					image: BurgerBliss,
 					title: 'Burger Bliss',
-					subtitle: 'Burger Bliss subtitle'
+					subtitle: 'Burger Bliss subtitle',
+					description: this.$t('PROJECTS_SECTION.BURGUER.DESCRIPTION'),
+					technologies: this.$t('PROJECTS_SECTION.BURGUER.TECHNOLOGIES')
 				}
 			]
 		};
@@ -46,7 +54,7 @@ export default {
 	<div class="projects-main-container">
 		<div class="section-title">
 			<SectionTitle
-				:color="'primary-dark'"
+				:color="'blue'"
 				:label="'PROYECTOS'"
 			/>
 		</div>
@@ -67,6 +75,8 @@ export default {
 					:image="item.image"
 					:title="item.title"
 					:subtitle="item.subtitle"
+					:description="item.description"
+					:technologies="item.technologies"
 				/>
 			</div>
 		</div>
@@ -140,21 +150,24 @@ export default {
 		.section-title {
 			display: flex;
 			flex-direction: column;
-			align-items: center;
+			align-items: start;
 			justify-content: center;
 		}
 		.title-container {
 			text-align: center;
 			display: flex;
 			flex-direction: column;
-			align-items: center;
+			align-items: start;
 			justify-content: center;
 			margin-top: 20px;
 			.title {
 				font-size: 2rem;
+				text-align: start;
+				width: 90%;
 			}
 			.description {
-				width: 90%;
+				width: 100%;
+				text-align: start;
 			}
 		}
 		.projects-container {

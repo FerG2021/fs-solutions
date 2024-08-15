@@ -1,5 +1,6 @@
 <script>
 import DynamicButton from '../../../components/DynamicButton.vue';
+import { goToCalendly, scrollTo } from '../../../utils/utils';
 
 export default {
 	components: { DynamicButton },
@@ -18,6 +19,14 @@ export default {
 		},
 		secondaryButtonLegend() {
 			return this.$t('PROJECTS');
+		}
+	},
+	methods: {
+		clickMeetButton() {
+			goToCalendly();
+		},
+		clickScrollTo(sectionId) {
+			scrollTo(sectionId);
 		}
 	}
 };
@@ -49,15 +58,22 @@ export default {
 				:label="primaryButtonLegend"
 				:showIcon="true"
 				:icon="'calendar'"
+				@click="clickMeetButton()"
 			/>
 
-			<DynamicButton
-				class="dynamic-button"
-				:type="'secondary'"
-				:label="secondaryButtonLegend"
-				:showIcon="true"
-				:icon="'star'"
-			/>
+			<a
+				:href="'Projects'"
+				class="a-button"
+				@click.prevent="clickScrollTo('Projects')"
+			>
+				<DynamicButton
+					class="dynamic-button"
+					:type="'secondary'"
+					:label="secondaryButtonLegend"
+					:showIcon="true"
+					:icon="'star'"
+				/>
+			</a>
 
 		</div>
 	</div>
@@ -98,6 +114,13 @@ export default {
 		.buttons-container {
 			display: flex;
 			justify-content: center;
+			.a-button {
+				text-decoration: none;
+				.dynamic-button {
+					width: 100%;
+					height: 100%;
+				}
+			}
 			.dynamic-button {
 				margin-left: 10px;
 			}
@@ -119,7 +142,7 @@ export default {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: space-around;
+		justify-content: space-evenly;
 		.main-legend-container {
 			display: flex;
 			flex-direction: column;
@@ -127,18 +150,28 @@ export default {
 			.main-legend {
 				font-size: 3rem;
 				text-align: center;
+				padding: 5px;
 			}
 			.secondary-legend {
 				margin-top: 20px;
-				font-size: 1rem;
+				font-size: 1.5rem;
 				text-align: center;
 			}
 		}
 		.buttons-container {
 			display: flex;
+			flex-direction: column;
 			justify-content: center;
+			.a-button {
+				text-decoration: none;
+				.dynamic-button {
+					width: 100%;
+					height: 100%;
+				}
+			}
 			.dynamic-button {
-				margin-left: 10px;
+				margin-bottom: 10px;
+				height: 40px;
 			}
 		}
 	}

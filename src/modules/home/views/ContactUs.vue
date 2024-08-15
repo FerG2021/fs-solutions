@@ -1,8 +1,12 @@
 <script>
+import ContactForm from './ContactForm.vue';
 import ContactUsItem from './ContactUsItem.vue';
 
 export default {
-	components: { ContactUsItem },
+	components: {
+		ContactUsItem,
+		ContactForm
+	},
 	data() {
 		return {
 			contactItems: [
@@ -43,7 +47,15 @@ export default {
 			</template>
 		</div>
 		<div class="contact-form-container">
-			contact
+			<div class="title">
+				{{  $t('CONTACT_US_SECTION.FORM.TITLE')  }}
+			</div>
+			<div class="subtitle">
+				{{  $t('CONTACT_US_SECTION.FORM.SUBTITLE')  }}
+			</div>
+			<div class="contact-form">
+				<ContactForm />
+			</div>
 		</div>
 	</div>
 </template>
@@ -52,10 +64,8 @@ export default {
 /* DESKTOP*/
 @media only screen and (min-width: 801px) {
 	.contact-us-main-container {
-		border: 1px solid red;
 		background: var(--background);
 		background: var(--background-gradient-invert);
-		height: 100vh;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -65,7 +75,6 @@ export default {
 		display: flex;
 		.contact-items-container {
 			width: 50%;
-			border: 1px solid blue;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -76,8 +85,58 @@ export default {
 		}
 		.contact-form-container {
 			width: 50%;
-			border: 1px solid blue;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			.title {
+				font-size: 3rem;
+			}
+			.subtitle {
+				font-size: 2rem;
+			}
+			.contact-form {
+				margin-top: 20px;
+				width: 50%;
+			}
+		}
+	}
+}
 
+/* MOBILE */
+@media only screen and (max-width: 800px) {
+	.contact-us-main-container {
+		background: var(--background);
+		background: var(--background-gradient-invert);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-color: rgba(0, 0, 0, 0.5);
+		color: var(--white);
+		padding: 20px;
+		.contact-items-container {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			margin-left: 20px;
+		}
+		.contact-form-container {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			.title {
+				text-align: center;
+				font-size: 2.5rem;
+			}
+			.subtitle {
+				font-size: 1.5rem;
+			}
+			.contact-form {
+				margin-top: 20px;
+			}
 		}
 	}
 }

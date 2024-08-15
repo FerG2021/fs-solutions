@@ -31,7 +31,7 @@ export default {
 
 <template>
 	<button :class="type" class="button">
-		{{ label }}
+		<span class="label">{{ label }}</span>
 		<i
 			v-if="showIcon"
 			class="icon"
@@ -50,6 +50,9 @@ button {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	.label {
+		font-size: 16px;
+	}
 }
 .primary {
 	background-color: var(--primary);

@@ -58,6 +58,9 @@ export default {
 		border-left: 1px solid var(--white);
 		.title-container {
 			margin-left: 20px;
+			.title {
+				font-weight: 600;
+			}
 			.description {
 				color: var(--grey);
 			}

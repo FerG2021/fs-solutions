@@ -1,5 +1,6 @@
 <script>
 import LogoIcon from '../assets/logo.svg';
+import { goToCalendly, scrollTo } from '../utils/utils';
 
 import DynamicButton from './DynamicButton.vue';
 import SidebarHeader from './SidebarHeader.vue';
@@ -57,22 +58,14 @@ export default {
 		handleScroll() {
 			this.isScrolled = window.scrollY > 0;
 		},
-		scrollTo(sectionId) {
-			const element = document.getElementById(sectionId);
-
-			if (element) {
-				const offset = 50;
-				const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-				const offsetPosition = elementPosition - offset;
-
-				window.scrollTo({
-					top: offsetPosition,
-					behavior: 'smooth'
-				});
-			}
+		clickScrollTo(sectionId) {
+			scrollTo(sectionId);
 		},
 		clickOpenSideBar() {
 			this.$refs.sidebarheader.openSideBar();
+		},
+		clickGoToCalendly() {
+			goToCalendly();
 		}
 	},
 	mounted() {
@@ -104,7 +97,7 @@ export default {
 			>
 				<a
 					:href="item.href"
-					@click.prevent="scrollTo(`${item.href}`)"
+					@click.prevent="clickScrollTo(`${item.href}`)"
 				>
 					{{ item.label }}
 				</a>
@@ -122,6 +115,7 @@ export default {
 				:label="primaryButtonLegend"
 				:showIcon="true"
 				:icon="'calendar'"
+				@click="clickGoToCalendly()"
 			/>
 		</div>
 		<div class="burguer-button-container">

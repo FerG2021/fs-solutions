@@ -25,33 +25,71 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.social-media-main-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 30vh;
-	width: 15vw;
-	border: 1px solid var(--grey);
-	border-radius: 10px;
-	background-color: var(--grey-light);
-	.icon {
-		cursor: pointer;
-		font-size: 6rem;
-	}
-	.facebook {
-		&:hover {
-			color: var(--facebook);
+/* DESKTOP*/
+@media only screen and (min-width: 801px) {
+	.social-media-main-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 30vh;
+		width: 15vw;
+		border: 1px solid var(--grey);
+		border-radius: 10px;
+		background-color: var(--grey-light);
+		.icon {
+			cursor: pointer;
+			font-size: 6rem;
 		}
-	}
-	.linkedin {
-		&:hover {
-			color: var(--linkedin);
+		.facebook {
+			&:hover {
+				color: var(--facebook);
+			}
 		}
-	}
-	.instagram {
-		&:hover {
-			color: var(--instagram);
+		.linkedin {
+			&:hover {
+				color: var(--linkedin);
+			}
+		}
+		.instagram {
+			&:hover {
+				color: var(--instagram);
+			}
 		}
 	}
 }
+
+/* MOBILE */
+@media only screen and (max-width: 800px) {
+	.social-media-main-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 12vh;
+		width: 50%;
+		border: 1px solid var(--grey);
+		border-radius: 10px;
+		background-color: var(--grey-light);
+		margin: 10px 0px;
+		.icon {
+			cursor: pointer;
+			font-size: 5rem;
+		}
+		.facebook {
+			&:hover {
+				color: var(--facebook);
+			}
+		}
+		.linkedin {
+			&:hover {
+				color: var(--linkedin);
+			}
+		}
+		.instagram {
+			&:hover {
+				color: var(--instagram);
+			}
+		}
+	}
+}
+
 </style>

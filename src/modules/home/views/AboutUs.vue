@@ -81,7 +81,6 @@ export default {
 /* DESKTOP*/
 @media only screen and (min-width: 801px) {
 	.about-us-main-container {
-		// background-image: url('../img/background.svg');
 		background: var(--background-invert);
 		background: var(--background-gradient-invert);
 		height: 100%;
@@ -108,6 +107,33 @@ export default {
 		}
 		.line-time-container {
 			width: 50%;
+		}
+	}
+}
+
+/* MOBILE */
+@media only screen and (max-width: 800px) {
+	.about-us-main-container {
+		background: var(--background-invert);
+		background: var(--background-gradient-invert);
+		height: 100%;
+		color: var(--white);
+		padding: 20px 40px;
+		.description-container {
+			.title-container {
+				display: flex;
+				flex-direction: column;
+				.title {
+					font-size: 2rem;
+				}
+				.description {
+					width: 100%;
+					padding: 10px;
+				}
+			}
+		}
+		.line-time-container {
+			margin-top: 20px;
 		}
 	}
 }

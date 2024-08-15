@@ -1,7 +1,13 @@
 import axios from 'axios';
 import Button from 'primevue/button';
 import PrimeVue from 'primevue/config';
+import FloatLabel from 'primevue/floatlabel';
+import InputNumber from 'primevue/inputnumber';
+import InputText from 'primevue/inputtext';
 import Sidebar from 'primevue/sidebar';
+import Textarea from 'primevue/textarea';
+import Toast from 'primevue/toast';
+import ToastService from 'primevue/toastservice';
 import { createApp } from 'vue';
 import VueAxios from 'vue-axios';
 
@@ -19,7 +25,7 @@ import { i18n } from './plugins/i18n';
 // axios.defaults.withCredentials = true;
 axios.defaults.baseURL = import.meta.env.VITE_API_URL;
 
-import 'primevue/resources/themes/lara-light-amber/theme.css'; //theme
+import 'primevue/resources/themes/aura-light-purple/theme.css'; //theme
 import 'primevue/resources/primevue.min.css'; //core css
 import 'primeicons/primeicons.css';
 
@@ -32,5 +38,11 @@ createApp(App)
 	.use(VueAxios, axios)
 	.component('Button', Button)
 	.component('Sidebar', Sidebar)
+	.component('FloatLabel', FloatLabel)
+	.component('InputText', InputText)
+	.component('InputNumber', InputNumber)
+	.component('Textarea', Textarea)
+	.component('Toast', Toast)
+	.use(ToastService)
 	.use(PrimeVue, primevueConfig)
 	.mount('#app');

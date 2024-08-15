@@ -1,4 +1,8 @@
 <script>
+import Figma from '../../../assets/figma.webp';
+import HTML from '../../../assets/html.webp';
+import JS from '../../../assets/js.png';
+import Vue from '../../../assets/vue.svg';
 import DynamicButton from '../../../components/DynamicButton.vue';
 
 import Steps from './Steps.vue';
@@ -7,6 +11,14 @@ export default {
 	components: {
 		Steps,
 		DynamicButton
+	},
+	data() {
+		return {
+			figma: Figma,
+			vue: Vue,
+			js: JS,
+			html: HTML
+		};
 	},
 	computed: {
 		steps() {
@@ -60,11 +72,17 @@ export default {
 					:label="$t('BOOK_A_MEETING')"
 					:showIcon="true"
 					:icon="'calendar'"
+					class="dynamic-button"
 				/>
 			</div>
 		</div>
 		<div class="images-container">
-			<div class="images"></div>
+			<div class="images">
+				<img :src="figma">
+				<img :src="vue">
+				<img :src="js">
+				<img :src="html">
+			</div>
 		</div>
 	</div>
 </template>
@@ -73,9 +91,6 @@ export default {
 /* DESKTOP*/
 @media only screen and (min-width: 801px) {
 	.how-we-work-main-container {
-		// background-image: url('../img/background.svg');
-		// background: rgb(99,47,98);
-		// background: linear-gradient(180deg, rgba(99,47,98,1) 24%, rgba(35,35,98,1) 100%);
 		background: var(--background);
 		background: var(--background-gradient);
 		height: calc(100vh - 50px);
@@ -113,6 +128,13 @@ export default {
 				width: 80%;
 				border-radius: 20px;
 				background-color: var(--primary);
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				img {
+					height: 25%;
+				}
 			}
 		}
 	}
@@ -149,6 +171,11 @@ export default {
 				margin-top: 20px;
 			}
 		}
+		.button-container {
+			.dynamic-button {
+				height: 40px;
+			}
+		}
 		.images-container {
 			width: 100%;
 			height: 80vh;
@@ -160,6 +187,13 @@ export default {
 				width: 80%;
 				border-radius: 20px;
 				background-color: var(--primary);
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				img {
+					height: 150px;
+				}
 			}
 		}
 	}

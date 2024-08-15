@@ -12,6 +12,14 @@ export default {
 		subtitle: {
 			type: String,
 			required: true
+		},
+		description: {
+			type: String,
+			required: true
+		},
+		technologies: {
+			type: String,
+			required: true
 		}
 	}
 };
@@ -24,7 +32,8 @@ export default {
 		</div>
 		<div class="title-subtitle-container">
 			<p class="title"> {{ title }} </p>
-			<p class="subtitle"> {{ subtitle }} </p>
+			<p class="subtitle"> {{ description }} </p>
+			<p class="technologies"> {{ technologies }} </p>
 		</div>
 	</div>
 </template>
@@ -35,7 +44,7 @@ export default {
 	.project-item-main-container {
 		border: 2px solid var(--grey);
 		background-color: var(--purple-light);
-		height: 75vh;
+		height: 100%;
 		width: 30vw;
 		border-radius: 10px;
 		display: flex;
@@ -44,7 +53,7 @@ export default {
 		align-items: center;
 		padding: 40px 20px;
 		.image-container {
-			height: 70%;
+			height: 40vh;
 			width: 90%;
 			border: 2px solid var(--grey);
 			border-radius: 10px;
@@ -56,11 +65,14 @@ export default {
 			}
 		}
 		.title-subtitle-container {
-			height: 25%;
 			width: 90%;
 			padding: 5px;
 			.subtitle {
 				color: var(--grey);
+			}
+			.technologies {
+				color: var(--grey);
+				font-weight: 600;
 			}
 		}
 	}
@@ -71,7 +83,6 @@ export default {
 	.project-item-main-container {
 		border: 2px solid var(--grey);
 		background-color: var(--purple-light);
-		height: 60vh;
 		width: 100%;
 		border-radius: 10px;
 		display: flex;
@@ -80,7 +91,7 @@ export default {
 		align-items: center;
 		padding: 40px 20px;
 		.image-container {
-			height: 70%;
+			height: 40vh;
 			width: 90%;
 			border: 2px solid var(--grey);
 			border-radius: 10px;
@@ -92,11 +103,14 @@ export default {
 			}
 		}
 		.title-subtitle-container {
-			height: 25%;
 			width: 90%;
 			padding: 5px;
 			.subtitle {
 				color: var(--grey);
+			}
+			.technologies {
+				color: var(--grey);
+				font-weight: 600;
 			}
 		}
 	}

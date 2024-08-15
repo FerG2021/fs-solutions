@@ -42,7 +42,7 @@ export default {
 	<div class="services-main-container">
 		<div class="section-title">
 			<SectionTitle
-				:color="'blue'"
+				:color="'primary-dark'"
 				:label="'EXPLORAR'"
 			/>
 		</div>
@@ -64,6 +64,14 @@ export default {
 				/>
 			</template>
 		</div>
+		<div class="final-message">
+			<span class="icon">
+				<i class="pi pi-globe"></i>
+			</span>
+			<span class="text">
+				{{ $t('SERVICES.FINAL_MESSAGE') }}
+			</span>
+		</div>
 	</div>
 </template>
 
@@ -71,7 +79,6 @@ export default {
 /* DESKTOP*/
 @media only screen and (min-width: 801px) {
 	.services-main-container {
-		// background-image: url('../img/background-invert.svg');
 		background: var(--background-invert);
 		background: var(--background-gradient-invert);
 		height: calc(100vh - 50px);
@@ -115,6 +122,22 @@ export default {
 				width: 40%;
 			}
 		}
+		.final-message {
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.icon {
+				margin-right: 10px;
+				i {
+					font-size: 2rem;
+					color: var(--primary);
+				}
+			}
+			.text {
+				font-size: 20px;
+			}
+		}
 	}
 }
 
@@ -135,7 +158,7 @@ export default {
 		.section-title {
 			display: flex;
 			flex-direction: column;
-			align-items: center;
+			align-items: start;
 			justify-content: center;
 			height: 8%;
 		}
@@ -143,14 +166,15 @@ export default {
 			text-align: center;
 			display: flex;
 			flex-direction: column;
-			align-items: center;
+			align-items: start;
 			justify-content: center;
-			height: 17%;
+			height: 100%;
 			.title {
 				font-size: 2rem;
 			}
 			.description {
-				width: 50%;
+				width: 100%;
+				text-align: start;
 			}
 		}
 		.services-container {
@@ -161,6 +185,23 @@ export default {
 			.service-item {
 				width: 90%;
 				margin-top: 20px;
+			}
+		}
+		.final-message {
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: 20px;
+			.icon {
+				margin-right: 10px;
+				i {
+					font-size: 2rem;
+					color: var(--primary);
+				}
+			}
+			.text {
+				font-size: 20px;
 			}
 		}
 	}

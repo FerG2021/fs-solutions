@@ -1,7 +1,9 @@
 <script>
 import AboutUs from './views/AboutUs.vue';
 import ContactUs from './views/ContactUs.vue';
+import FinalMessage from './views/FinalMessage.vue';
 import FollowUs from './views/FollowUs.vue';
+import FooterVue from './views/Footer.vue';
 import HowWeWork from './views/HowWeWork.vue';
 import MainSection from './views/MainSection.vue';
 import Projects from './views/Projects.vue';
@@ -16,7 +18,9 @@ export default {
 		Projects,
 		AboutUs,
 		FollowUs,
-		ContactUs
+		ContactUs,
+		FinalMessage,
+		FooterVue
 	}
 };
 </script>
@@ -43,6 +47,12 @@ export default {
 		</section>
 		<section id="ContactUs">
 			<ContactUs />
+		</section>
+		<section id="FinalMessage">
+			<FinalMessage />
+		</section>
+		<section id="FooterVue">
+			<FooterVue />
 		</section>
 	</div>
 </template>

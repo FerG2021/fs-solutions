@@ -35,7 +35,8 @@
 
 	"SERVICES": {
 		"TITLE": "Our services",
-		"DESCRIPTION": "We offer software solutions for all types of clients. If you can dream it, we can make it happen. We work from the beginning to the launch."
+		"DESCRIPTION": "We offer software solutions for all types of clients. If you can dream it, we can make it happen. We work from the beginning to the launch.",
+		"FINAL_MESSAGE": "Book a meeting and start your tour with us"
 	},
 
 	"FIRST_SERVICE_ITEM": {
@@ -57,7 +58,23 @@
 
 	"PROJECTS_SECTION": {
 		"TITLE": "Solutions developed and turned into reality.",
-		"DESCRIPTION": "Each client is essential for us. Our team takes care of each project from start to finish with very good results. Come check it out for yourself."
+		"DESCRIPTION": "Each client is essential for us. Our team takes care of each project from start to finish with very good results. Come check it out for yourself.",
+		"LALA": {
+			"DESCRIPTION": "Development of a management panel that allows you to control the stock of products with their price, characteristics, details, etc., list of clients and their checking accounts and allow the sale of your products, the software informs through notifications when there is little left stock of a certain product, a customer falls behind on a payment on their checking account. It also allows you to export the list of clients and products in PDF, and send a PDF of the current account details to clients via WhatsApp.",
+			"TECHNOLOGIES": "Vue.js, Vuex, Vue-Router, HTML, CSS, Javascript, Laravel, PHP, MySQL,"
+		},
+		"MODULAR": {
+			"DESCRIPTION": "Development of a management panel that allows employees to compare products from different suppliers. When loading is finished, the panel shows the user the best purchase option according to different values. Additionally, when generating a new budget, an email with an access link is sent to the different suppliers, so they can enter and upload their prices for the different products.",
+			"TECHNOLOGIES": "Vue.js, Vuex, Vue-Router, HTML, CSS, Javascript, Laravel, PHP, MySQL, PHPMyAdmin"
+		},
+		"BURGUER": {
+			"DESCRIPTION": "Development of a digital menu with a shopping cart that allows customers to select the products and quantity they wish to purchase. Those in charge of the commercial premises that purchase these products have a management panel to be able to add, modify and delete products, categories and promotions.",
+			"TECHNOLOGIES": "Vue.js, Vuex, Vue-Router, HTML, CSS, Javascript, Laravel, PHP, MySQL, PHPMyAdmin"
+		},
+		"LALO": {
+			"DESCRIPTION": "Development of a landing page that allows you to view the available stock of vehicles along with their details. In addition, the firm's employees have access to a management panel to create, update and modify vehicles, brands and categories, which are reflected directly on the landing page, as well as control their clients' quotas. Show notifications when it's a customer's birthday or a payment is due.",
+			"TECHNOLOGIES": "Vue.js, Vuex, Vue-Router, HTML, CSS, Javascript, Laravel, PHP, MySQL, PHPMyAdmin"
+		}
 	},
 
 	"ABOUT_US_SECTION": {
@@ -93,6 +110,51 @@
 	"FOLLOW_US_SECTION": {
 		"TITLE": "Connect with us",
 		"DESCRIPTION": "Join our community on social networks, where we share our passion for software development and design with hundreds of users like you. Come and collaborate with us!"
+	},
+
+	"CONTACT_US_SECTION": {
+		"WHATSAPP": {
+			"TITLE": "WhatsApp",
+			"SUBTITLE": "3843407142"
+		},
+		"EMAIL": {
+			"TITLE": "E-mail",
+			"SUBTITLE": "fssolutions.jmgmail.com"
+		},
+		"LOCATION": {
+			"TITLE": "Location",
+			"SUBTITLE": "Buenos Aires, Argentina"
+		},
+		"FORM": {
+			"TITLE": "Do you have any questions?",
+			"SUBTITLE": "Send us a message",
+			"NAME": "Name",
+			"EMAIL": "E-mail",
+			"PHONE": "Phone",
+			"MESSAGE": "Write your message",
+			"SUBMIT": "Submit"
+		}
+	},
+
+	"FINAL_MESSAGE_SECTION": {
+		"TITLE": "Ready to develop your ideas?",
+		"MESSAGE": "We're here to help you bring your ideas to life with our expertise in software development and design."
+	},
+	
+	"FOOTER_SECTION": {
+		"MESSAGE": "FSsolutions is a software development company that provides solutions for everyone, everywhere.",
+		"COMUNITY_ITEMS": {
+			"INSTAGRAM": "Instagram",
+			"FACEBOOK": "Facebook",
+			"LINKEDIN": "LinkedIn"
+		},
+		"RESOURCES_ITEMS": {
+			"PRIVACY_POLICIES": "Privacy Policy"
+		},
+		"COPYRIGHT": {
+			"COPYRIGHT": "©Copyright",
+			"RIGHTS_RESERVED": "2024 - All rights reserved"
+		}
 	}
 
 }
