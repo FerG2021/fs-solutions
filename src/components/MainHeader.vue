@@ -1,5 +1,5 @@
 <script>
-import LogoIcon from '../assets/logo.svg';
+import LogoIcon from '../assets/logo.png';
 import { goToCalendly, scrollTo } from '../utils/utils';
 
 import DynamicButton from './DynamicButton.vue';
@@ -14,10 +14,10 @@ export default {
 		return {
 			logo: LogoIcon,
 			itemsSections: [
-				{
-					label: this.$t('SECTIONS.HOME'),
-					href: 'MainSection'
-				},
+				// {
+				// 	label: this.$t('SECTIONS.HOME'),
+				// 	href: 'MainSection'
+				// },
 				{
 					label: this.$t('SECTIONS.HOW_WORK'),
 					href: 'HowWeWork'
@@ -37,11 +37,11 @@ export default {
 				{
 					label: this.$t('SECTIONS.FOLLOW_US'),
 					href: 'FollowUs'
-				},
-				{
-					label: this.$t('SECTIONS.CONTACT_US'),
-					href: 'ContactUs'
 				}
+				// {
+				// 	label: this.$t('SECTIONS.CONTACT_US'),
+				// 	href: 'ContactUs'
+				// }
 			],
 			isScrolled: false
 		};
@@ -87,6 +87,7 @@ export default {
 			<img
 				:src="logo"
 				class="logo"
+				@click.prevent="clickScrollTo(`MainSection`)"
 			>
 		</div>
 		<div class="sections-container">
@@ -108,6 +109,7 @@ export default {
 				:type="'secondary'"
 				:label="secondaryButtonLegend"
 				:showIcon="false"
+				@click.prevent="clickScrollTo(`ContactUs`)"
 			/>
 
 			<DynamicButton
@@ -151,9 +153,11 @@ export default {
 			width: 20%;
 			display: flex;
 			.logo {
-				height: 100%;
-				height: 50px;
+				height: 40px;
 				margin-left: 40px;
+				&:hover {
+					cursor: pointer;
+				}
 			}
 		}
 		.sections-container {
@@ -175,7 +179,7 @@ export default {
 		.buttons-container {
 			width: 25%;
 			display: flex;
-			justify-content: space-around;
+			justify-content: space-evenly;
 		}
 		.burguer-button-container {
 			display: none;
