@@ -37,10 +37,6 @@ export default {
 				{
 					label: this.$t('SECTIONS.FOLLOW_US'),
 					href: 'FollowUs'
-				},
-				{
-					label: this.$t('SECTIONS.CONTACT_US'),
-					href: 'ContactUs'
 				}
 			],
 			isScrolled: false
@@ -59,6 +55,8 @@ export default {
 			this.isScrolled = window.scrollY > 0;
 		},
 		clickScrollTo(sectionId) {
+			console.log('click');
+
 			scrollTo(sectionId);
 		},
 		clickOpenSideBar() {
@@ -87,6 +85,7 @@ export default {
 			<img
 				:src="logo"
 				class="logo"
+				@click.prevent="clickScrollTo(`MainSection`)"
 			>
 		</div>
 		<div class="sections-container">
@@ -108,6 +107,7 @@ export default {
 				:type="'secondary'"
 				:label="secondaryButtonLegend"
 				:showIcon="false"
+				@click.prevent="clickScrollTo(`ContactUs`)"
 			/>
 
 			<DynamicButton

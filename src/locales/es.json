@@ -13,7 +13,8 @@
 	"MEET_US": "Contactanos",
 	"SOFTWARE_SOLUTIONS": "Soluciones de software",
 	
-	"MAIN_LEGEND": "Convertimos tus ideas en software",
+	"MAIN_LEGEND": "Convertimos tus ideas en",
+	"SOFTWARE": "software",
 	"SECONDARY_LEGEND": "FSsolutions es una empresa de desarrollo de software que proporciona soluciones para todos, en todas partes.",
 	"PROJECTS": "Proyectos",
 
@@ -60,19 +61,19 @@
 		"TITLE": "Soluciones desarrolladas y convertidas en realidad.",
 		"DESCRIPTION": "Cada cliente es fundamental para nosotros. Nuestro equipo se encarga de cada proyecto de principio a fin con resultados muy buenos. Veni a comprobarlo vos mismo.",
 		"LALA": {
-			"DESCRIPTION": "Desarrollo de un panel de gestión que permite tener el control de stock de los productos con su precio, características, detalles, etc., lista de clientes y sus cuentas corrientes y permitir la venta de sus productos, el software informa mediante notificaciones cuando queda poco stock de un determinado producto, un cliente se atrasa en una cuota de su cuenta corriente. Además permite exportar en PDF la lista de clientes y productos, y enviar por WhatsApp un pdf del detalle de la cuenta corriente a los clientes.",
+			"DESCRIPTION": "Panel de gestión para control de stock de productos, lista de clientes, cuentas corrientes y venta de productos. Exportacion de listas a PDF, y envío por WhatsApp",
 			"TECHNOLOGIES": "Vue.js, Vuex, Vue-Router, HTML, CSS, Javascript, Laravel, PHP, MySQL,"
 		},
 		"MODULAR": {
-			"DESCRIPTION": "Desarrollo de un panel de gestión que permite a los empleados realizar una comparativa de productos de diferentes proveedores, al terminar de realizar la carga el panel muestra al usuario la mejor opción de compra según distintos valores. Además al generar una nueva presupuestación se le envía a los diferentes proveedores un mail con un link de acceso, para que puedan ingresar y cargar sus precios para los diferentes productos.",
+			"DESCRIPTION": "Panel de gestión para comparativa de productos de diferentes proveedores, mostrando la mejor opción de compra según distintos valores. Envío de presupuestación a los proveedores mediante un mail con un link de acceso, para cargar precios de productos.",
 			"TECHNOLOGIES": "Vue.js, Vuex, Vue-Router, HTML, CSS, Javascript, Laravel, PHP, MySQL, PHPMyAdmin"
 		},
 		"BURGUER": {
-			"DESCRIPTION": "Desarrollo de una carta digital con carrito de compra que permite a los clientes seleccionar los productos y la cantidad que desean adquirir. Los encargados de los locales comerciales que adquieren estos productos disponen de un panel de gestión para poder agregar, modificar y eliminar productos, categorías y promociones.",
+			"DESCRIPTION": "Carta digital con carrito de compra . Panel de gestión para poder agregar, modificar y eliminar productos, categorías y promociones.",
 			"TECHNOLOGIES": "Vue.js, Vuex, Vue-Router, HTML, CSS, Javascript, Laravel, PHP, MySQL, PHPMyAdmin"
 		},
 		"LALO": {
-			"DESCRIPTION": "Desarrollo de una landing page que permite visualizar el stock disponible de vehículos junto con los detalles de los mismos. Además los empleados de la firma tienen acceso a un panel de gestión para crear, actualizar y modificar los vehículos, marcas y categorías, que se ven reflejados directamente en la landing page, como también tener un control de cuotas de sus clientes. Muestra notificaciones cuando es el cumpleaños de un cliente o se le vence una cuota.",
+			"DESCRIPTION": "Landing page que permite visualizar vehículos y sus detalles. Panel de gestión para crear, actualizar y modificar los vehículos, marcas y categorías, y control de cuotas de sus clientes. Muestra notificaciones a la fecha de vencimiento de una cuota.",
 			"TECHNOLOGIES": "Vue.js, Vuex, Vue-Router, HTML, CSS, Javascript, Laravel, PHP, MySQL, PHPMyAdmin"
 		}
 	},

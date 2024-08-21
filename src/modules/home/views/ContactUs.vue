@@ -1,4 +1,6 @@
 <script>
+import { goToGoogleMaps, goToWhatsApp } from '../../../utils/utils';
+
 import ContactForm from './ContactForm.vue';
 import ContactUsItem from './ContactUsItem.vue';
 
@@ -27,6 +29,26 @@ export default {
 				}
 			]
 		};
+	},
+	methods: {
+		clickContactItem(key) {
+			console.log('clickContactItem()', key);
+
+			switch (key) {
+					case 'whatsapp':
+						goToWhatsApp();
+						break;
+					case 'envelope':
+						goToWhatsApp();
+						break;
+					case 'map-marker':
+						goToGoogleMaps();
+						break;
+
+					default:
+						break;
+			}
+		}
 	}
 };
 </script>
@@ -43,6 +65,7 @@ export default {
 					:title="contactItem.title"
 					:subtitle="contactItem.subtitle"
 					class="contact-us-item"
+					@click="clickContactItem(contactItem.icon)"
 				/>
 			</template>
 		</div>
@@ -77,10 +100,13 @@ export default {
 			width: 50%;
 			display: flex;
 			flex-direction: column;
-			align-items: center;
 			justify-content: space-evenly;
+			margin-left: 10vw;
 			.contact-us-item {
-				width: 50%;
+				width: fit-content;
+				&:hover {
+					cursor: pointer;
+				}
 			}
 		}
 		.contact-form-container {
@@ -119,7 +145,7 @@ export default {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-evenly;
-			margin-left: 20px;
+			margin: 20px 0;
 		}
 		.contact-form-container {
 			width: 100%;

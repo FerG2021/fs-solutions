@@ -1,8 +1,12 @@
 <script>
 import SectionTitle from '../../../components/SectionTitle.vue';
-import BurgerBliss from '../img/burger-bliss.png';
-import LalaDecoKids from '../img/lala-deco-kids.png';
-import Lalo from '../img/lalo-automotores.png';
+import BurgerHover from '../img/burguer-hover.png';
+import Burger from '../img/burguer.png';
+import LalaHover from '../img/lala-hover.png';
+import Lala from '../img/lala.png';
+import LaloHover from '../img/lalo-hover.png';
+import Lalo from '../img/lalo.png';
+import ModularHover from '../img/modular-hover.png';
 import Modular from '../img/modular.png';
 
 import ProjectItem from './ProjectItem.vue';
@@ -17,35 +21,40 @@ export default {
 		return {
 			projectItems: [
 				{
-					image: LalaDecoKids,
+					image: Lala,
+					hoverImage: LalaHover,
 					title: 'Lala Deco Kids',
-					subtitle: 'Lala Deco Kids subtitle',
 					description: this.$t('PROJECTS_SECTION.LALA.DESCRIPTION'),
 					technologies: this.$t('PROJECTS_SECTION.LALA.TECHNOLOGIES')
 				},
 				{
 					image: Modular,
+					hoverImage: ModularHover,
 					title: 'ModulAr',
-					subtitle: 'ModulAr subtitle',
 					description: this.$t('PROJECTS_SECTION.MODULAR.DESCRIPTION'),
 					technologies: this.$t('PROJECTS_SECTION.MODULAR.TECHNOLOGIES')
 				},
 				{
 					image: Lalo,
+					hoverImage: LaloHover,
 					title: 'Lalo Automotores',
-					subtitle: 'Lalo Automotores subtitle',
 					description: this.$t('PROJECTS_SECTION.LALO.DESCRIPTION'),
 					technologies: this.$t('PROJECTS_SECTION.LALO.TECHNOLOGIES')
 				},
 				{
-					image: BurgerBliss,
+					image: Burger,
+					hoverImage: BurgerHover,
 					title: 'Burger Bliss',
-					subtitle: 'Burger Bliss subtitle',
 					description: this.$t('PROJECTS_SECTION.BURGUER.DESCRIPTION'),
 					technologies: this.$t('PROJECTS_SECTION.BURGUER.TECHNOLOGIES')
 				}
 			]
 		};
+	},
+	methods: {
+		clickExpandButton(data) {
+			this.projectItems[data].expand = !this.projectItems[data].expand;
+		}
 	}
 };
 </script>
@@ -69,14 +78,21 @@ export default {
 		</div>
 
 		<div class="projects-container">
-			<div v-for="item in projectItems" :key="item" class="project-item-container">
+			<div
+				v-for="item, index in projectItems"
+				:key="item"
+				class="project-item-container"
+			>
 				<ProjectItem
-					class="project-item"
 					:image="item.image"
+					:hoverImage="item.hoverImage"
 					:title="item.title"
 					:subtitle="item.subtitle"
 					:description="item.description"
 					:technologies="item.technologies"
+					:expand="item.expand"
+					:index="index"
+					@click-expand-button="clickExpandButton"
 				/>
 			</div>
 		</div>
@@ -87,7 +103,6 @@ export default {
 /* DESKTOP*/
 @media only screen and (min-width: 801px) {
 	.projects-main-container {
-		// background-image: url('../img/background.svg');
 		background: var(--background);
 		background: var(--background-gradient);
 		height: 100%;
@@ -129,6 +144,20 @@ export default {
 				display: flex;
 				justify-content: center;
 				padding: 20px;
+				view-timeline-name: --reveal;
+				animation-name: show;
+				animation-fill-mode: both;
+				animation-timeline: --reveal;
+				animation-range: entry 25% cover 50%;
+			}
+
+			@keyframes show {
+				from {
+					opacity: 0; scale: 10%;
+				}
+				to {
+					opacity: 1; scale: 100%;
+				}
 			}
 		}
 	}
@@ -137,14 +166,15 @@ export default {
 /* MOBILE */
 @media only screen and (max-width: 800px) {
 	.projects-main-container {
-		background-image: url('../img/background.svg');
+		background: var(--background);
+		background: var(--background-gradient);
 		height: 100%;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-color: rgba(0, 0, 0, 0.5);
 		color: var(--white);
-		padding: 20px;
+		padding: 40px 20px;
 		display: flex;
 		flex-direction: column;
 		.section-title {
@@ -181,6 +211,19 @@ export default {
 				display: flex;
 				justify-content: center;
 				padding: 20px;
+				view-timeline-name: --reveal;
+				animation-name: show;
+				animation-fill-mode: both;
+				animation-timeline: --reveal;
+				animation-range: entry 25% cover 50%;
+			}
+			@keyframes show {
+				from {
+					opacity: 0; scale: 10%;
+				}
+				to {
+					opacity: 1; scale: 100%;
+				}
 			}
 		}
 	}

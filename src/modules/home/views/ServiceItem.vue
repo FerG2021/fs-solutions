@@ -14,18 +14,40 @@ export default {
 			required: true
 		}
 	},
+	data() {
+		return { hoverElement: false };
+	},
 	computed: {
 		itemIcon() {
 			return `pi pi-${this.icon}`;
+		},
+		shakeClass() {
+			return this.hoverElement ? 'animate__animated animate__swing' : '';
+		},
+		iconClass() {
+			return `${this.itemIcon} ${this.shakeClass}`;
+		}
+	},
+	methods: {
+		onHover(status) {
+			if (status) {
+				this.hoverElement = true;
+			} else {
+				this.hoverElement = false;
+			}
 		}
 	}
 };
 </script>
 
 <template>
-	<div class="service-item-container">
+	<div
+		class="service-item-container"
+		@mouseover="onHover(true)"
+		@mouseleave="onHover(false)"
+	>
 		<div class="icon-container">
-			<i :class="itemIcon" style="font-size: 1rem"></i>
+			<i :class="iconClass" style="font-size: 1rem"></i>
 		</div>
 		<div class="description-container">
 			<div class="title-container">
@@ -59,10 +81,8 @@ export default {
 		.title-container {
 			margin-left: 20px;
 			.title {
-				font-weight: 600;
-			}
-			.description {
-				color: var(--grey);
+				font-weight: 800;
+				font-size: 18px;
 			}
 		}
 	}

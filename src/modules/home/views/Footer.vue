@@ -1,5 +1,5 @@
 <script>
-import Logo from '../../../assets/logo.svg';
+import Logo from '../../../assets/fs-solutions.png';
 
 export default {
 	name: 'FooterComponent',
@@ -79,7 +79,7 @@ export default {
 	<div class="footer-main-container">
 		<div class="footer-container">
 			<div class="content-container">
-				<img :src="logo">
+				<img :src="logo" class="logo">
 				<p> {{  $t('FOOTER_SECTION.MESSAGE')  }} </p>
 			</div>
 			<div class="content-links-containers">
@@ -217,13 +217,16 @@ export default {
 	.footer-main-container {
 		background: var(--footer-color);
 		color: var(--white);
-		padding: 50px;
+		padding: 30px;
 		.footer-container {
 			border-top: 1px solid var(--grey);
 			border-bottom: 1px solid var(--grey);
 			.content-container {
 				width: 100%;
 				margin: 20px 0;
+				.logo {
+					height: 100px;
+				}
 				p {
 					font-size: 1.5rem;
 				}
@@ -275,9 +278,10 @@ export default {
 			}
 		}
 		.copy-container {
+			margin-top: 5px;
 			display: flex;
-			flex-direction: column;
 			justify-content: space-between;
+			font-size: .8rem;
 		}
 	}
 }

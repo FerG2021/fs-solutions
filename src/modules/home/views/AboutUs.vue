@@ -83,12 +83,14 @@ export default {
 	.about-us-main-container {
 		background: var(--background-invert);
 		background: var(--background-gradient-invert);
-		height: 100%;
+		height: 100vh;
 		color: var(--white);
-		padding: 20px 40px;
+		padding: 30px 40px;
 		display: flex;
+		align-items: center;
 		.description-container {
 			width: 50%;
+			height: 100%;
 			.title-container {
 				display: flex;
 				flex-direction: column;
@@ -106,7 +108,9 @@ export default {
 			}
 		}
 		.line-time-container {
+			margin-top: 80px;
 			width: 50%;
+			height: 100vh;
 		}
 	}
 }
@@ -120,6 +124,7 @@ export default {
 		color: var(--white);
 		padding: 20px 40px;
 		.description-container {
+			margin-top: 20px;
 			.title-container {
 				display: flex;
 				flex-direction: column;

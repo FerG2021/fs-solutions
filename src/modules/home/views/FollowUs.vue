@@ -64,8 +64,8 @@ export default {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: space-around;
 		.section-title {
-			height: 10%;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -78,12 +78,12 @@ export default {
 			align-items: center;
 			justify-content: center;
 			margin-top: 20px;
-			height: 20%;
 			.title {
-				font-size: 2rem;
+				font-size: 3rem;
 			}
 			.description {
 				width: 50%;
+				font-size: 1.5rem;
 			}
 		}
 		.social-media-container {
@@ -145,6 +145,7 @@ export default {
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
+			margin-top: 20px;
 			.social-media {
 				height: 80%;
 				width: 80%;
@@ -153,6 +154,7 @@ export default {
 				flex-direction: column;
 				align-items: center;
 				justify-content: space-around;
+				padding: 20px 0;
 			}
 		}
 	}
