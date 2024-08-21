@@ -1,9 +1,13 @@
 <script>
 import Figma from '../../../assets/figma.webp';
+import FinishProject from '../../../assets/finish-project.png';
+import FirstMeet from '../../../assets/first-meet.png';
 import HTML from '../../../assets/html.webp';
 import JS from '../../../assets/js.png';
+import StartProject from '../../../assets/start-project.png';
 import Vue from '../../../assets/vue.svg';
 import DynamicButton from '../../../components/DynamicButton.vue';
+import { goToCalendly } from '../../../utils/utils';
 
 import Steps from './Steps.vue';
 
@@ -17,28 +21,51 @@ export default {
 			figma: Figma,
 			vue: Vue,
 			js: JS,
-			html: HTML
+			html: HTML,
+			firstMeet: FirstMeet,
+			startProject: StartProject,
+			finishProject: FinishProject,
+			isFirstStepHovered: false,
+			isSecondStepHovered: false,
+			isThirdStepHovered: false
 		};
 	},
 	computed: {
 		steps() {
 			return [
 				{
+					id: 1,
 					icon: 'camera',
 					title: this.$t('FIRST_STEP.TITLE'),
 					description: this.$t('FIRST_STEP.DESCRIPTION')
 				},
 				{
+					id: 2,
 					icon: 'bullseye',
 					title: this.$t('SECOND_STEP.TITLE'),
 					description: this.$t('SECOND_STEP.DESCRIPTION')
 				},
 				{
+					id: 3,
 					icon: 'file-check',
 					title: this.$t('THIRD_STEP.TITLE'),
 					description: this.$t('THIRD_STEP.DESCRIPTION')
 				}
 			];
+		}
+	},
+	methods: {
+		onHover(status, step) {
+			if (step.id === 1) {
+				this.isFirstStepHovered = status;
+			} else if (step.id === 2) {
+				this.isSecondStepHovered = status;
+			} else {
+				this.isThirdStepHovered = status;
+			}
+		},
+		clickGoToCalendly() {
+			goToCalendly();
 		}
 	}
 };
@@ -62,6 +89,8 @@ export default {
 						:icon="step.icon"
 						:title="step.title"
 						:description="step.description"
+						@mouseover="onHover(true, step)"
+						@mouseleave="onHover(false, step)"
 						class="steps"
 					/>
 				</template>
@@ -73,15 +102,32 @@ export default {
 					:showIcon="true"
 					:icon="'calendar'"
 					class="dynamic-button"
+					@click="clickGoToCalendly()"
 				/>
 			</div>
 		</div>
 		<div class="images-container">
 			<div class="images">
-				<img :src="figma">
-				<img :src="vue">
-				<img :src="js">
-				<img :src="html">
+				<img
+					v-if="isFirstStepHovered"
+					:src="firstMeet"
+					alt="Imagen"
+					class="animated-image animate__animated animate__zoomIn"
+				/>
+
+				<img
+					v-if="isSecondStepHovered"
+					:src="startProject"
+					alt="Imagen"
+					class="animated-image animate__animated animate__zoomIn"
+				/>
+
+				<img
+					v-if="isThirdStepHovered"
+					:src="finishProject"
+					alt="Imagen"
+					class="animated-image animate__animated animate__zoomIn"
+				/>
 			</div>
 		</div>
 	</div>
@@ -133,7 +179,7 @@ export default {
 				justify-content: center;
 				align-items: center;
 				img {
-					height: 25%;
+					height: 50%;
 				}
 			}
 		}
@@ -143,7 +189,8 @@ export default {
 /* MOBILE */
 @media only screen and (max-width: 800px) {
 	.how-we-work-main-container {
-		background-image: url('../img/background.svg');
+		background: var(--background);
+		background: var(--background-gradient);
 		height: 100%;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -158,6 +205,11 @@ export default {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-around;
+			.information {
+				.how-we-work-legend {
+					font-weight: 600;
+				}
+			}
 			.steps-container {
 				.steps {
 					margin-top: 20px;
@@ -178,12 +230,13 @@ export default {
 		}
 		.images-container {
 			width: 100%;
-			height: 80vh;
+			height: 50vh;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			.images {
-				height: calc((100vh - 50px) - 30%);
+				// height: calc((100vh - 50px) - 60%);
+				height: 40vh;
 				width: 80%;
 				border-radius: 20px;
 				background-color: var(--primary);

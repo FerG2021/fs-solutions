@@ -39,6 +39,10 @@ export default {
 		.icon {
 			cursor: pointer;
 			font-size: 6rem;
+			transition: transform 0.3s ease;
+			&:hover {
+				transform: scale(1.2);
+			}
 		}
 		.facebook {
 			&:hover {

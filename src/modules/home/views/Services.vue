@@ -144,7 +144,8 @@ export default {
 /* MOBILE */
 @media only screen and (max-width: 800px) {
 	.services-main-container {
-		background-image: url('../img/background-invert.svg');
+		background: var(--background-invert);
+		background: var(--background-gradient-invert);
 		height: 100%;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -192,7 +193,7 @@ export default {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			margin-top: 20px;
+			margin: 30px 0px;
 			.icon {
 				margin-right: 10px;
 				i {

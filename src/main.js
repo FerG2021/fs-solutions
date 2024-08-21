@@ -1,3 +1,4 @@
+import 'animate.css';
 import axios from 'axios';
 import Button from 'primevue/button';
 import PrimeVue from 'primevue/config';

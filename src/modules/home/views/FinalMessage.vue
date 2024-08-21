@@ -86,7 +86,7 @@ export default {
 		background-position: center center;
 		background-color: rgba(0, 0, 0, 0.5);
 		color: var(--white);
-		padding: 20px;
+		padding: 30px 20px;
 		.final-message-container {
 			width: 100%;
 			font-size: 1rem;

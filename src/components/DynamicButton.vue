@@ -30,14 +30,14 @@ export default {
 </script>
 
 <template>
-	<button :class="type" class="button">
+	<Button :class="type" class="button">
 		<span class="label">{{ label }}</span>
 		<i
 			v-if="showIcon"
 			class="icon"
 			:class="classIcon"
 		/>
-	</button>
+	</Button>
 </template>
 
 <style lang="scss" scoped>

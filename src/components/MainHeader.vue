@@ -59,6 +59,8 @@ export default {
 			this.isScrolled = window.scrollY > 0;
 		},
 		clickScrollTo(sectionId) {
+			console.log('click');
+
 			scrollTo(sectionId);
 		},
 		clickOpenSideBar() {
