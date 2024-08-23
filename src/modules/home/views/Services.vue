@@ -66,7 +66,7 @@ export default {
 		</div>
 		<div class="final-message">
 			<span class="icon">
-				<i class="pi pi-globe"></i>
+				<i class="pi pi-spin pi-globe"></i>
 			</span>
 			<span class="text">
 				{{ $t('SERVICES.FINAL_MESSAGE') }}
@@ -81,7 +81,7 @@ export default {
 	.services-main-container {
 		background: var(--background-invert);
 		background: var(--background-gradient-invert);
-		height: calc(100vh - 50px);
+		height: 100%;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -117,9 +117,9 @@ export default {
 			align-items: center;
 			justify-content: space-around;
 			flex-wrap: wrap;
-			height: 75%;
 			.service-item {
 				width: 40%;
+				margin: 10px 0px;
 			}
 		}
 		.final-message {
@@ -127,6 +127,7 @@ export default {
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			margin-top: 20px;
 			.icon {
 				margin-right: 10px;
 				i {

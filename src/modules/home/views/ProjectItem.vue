@@ -73,8 +73,8 @@ export default {
 			justify-content: center;
 			img {
 				height: 100%;
+				width: 100%;
 				object-fit: contain;
-				padding: 10px;
 			}
 		}
 		.title-subtitle-container {

@@ -31,7 +31,7 @@ export default {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		height: 30vh;
+		height: 90%;
 		width: 15vw;
 		border: 1px solid var(--grey);
 		border-radius: 10px;

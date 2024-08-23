@@ -54,7 +54,7 @@ export default {
 	.follow-us-main-container {
 		background: var(--background);
 		background: var(--background-gradient);
-		height: 100vh;
+		height: calc(100vh - 50px);
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;

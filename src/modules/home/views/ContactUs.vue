@@ -96,6 +96,7 @@ export default {
 		color: var(--white);
 		padding: 20px;
 		display: flex;
+		height: calc(100vh - 50px);
 		.contact-items-container {
 			width: 50%;
 			display: flex;

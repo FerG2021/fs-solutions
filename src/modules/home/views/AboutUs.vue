@@ -85,7 +85,7 @@ export default {
 		background: var(--background-gradient-invert);
 		height: 100vh;
 		color: var(--white);
-		padding: 30px 40px;
+		padding: 40px 40px;
 		display: flex;
 		align-items: center;
 		.description-container {
@@ -138,7 +138,7 @@ export default {
 			}
 		}
 		.line-time-container {
-			margin-top: 20px;
+			margin-top: 40px;
 		}
 	}
 }

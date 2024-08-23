@@ -63,28 +63,62 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.service-item-container {
-	background-color: var(--purple-light);
-	padding: 20px;
-	border-radius: 20px;
-	border: 1px solid var(--white);
-	.icon-container {
-		i {
-			border: 1px solid var(--white);
-			padding: 10px;
-			border-radius: 10px;
+/* DESKTOP*/
+@media only screen and (min-width: 801px) {
+	.service-item-container {
+		background-color: var(--purple-light);
+		padding: 20px;
+		border-radius: 20px;
+		border: 1px solid var(--white);
+		height: 200px;
+		.icon-container {
+			i {
+				border: 1px solid var(--white);
+				padding: 10px;
+				border-radius: 10px;
+			}
 		}
-	}
-	.description-container {
-		margin-top: 20px;
-		border-left: 1px solid var(--white);
-		.title-container {
-			margin-left: 20px;
-			.title {
-				font-weight: 800;
-				font-size: 18px;
+		.description-container {
+			margin-top: 20px;
+			border-left: 1px solid var(--white);
+			.title-container {
+				margin-left: 20px;
+				.title {
+					font-weight: 800;
+					font-size: 18px;
+				}
 			}
 		}
 	}
 }
+
+/* MOBILE */
+@media only screen and (max-width: 800px) {
+	.service-item-container {
+		background-color: var(--purple-light);
+		padding: 20px;
+		border-radius: 20px;
+		border: 1px solid var(--white);
+		min-height: 200px;
+		.icon-container {
+			i {
+				border: 1px solid var(--white);
+				padding: 10px;
+				border-radius: 10px;
+			}
+		}
+		.description-container {
+			margin-top: 20px;
+			border-left: 1px solid var(--white);
+			.title-container {
+				margin-left: 20px;
+				.title {
+					font-weight: 800;
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+
 </style>

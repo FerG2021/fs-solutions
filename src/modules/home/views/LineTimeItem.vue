@@ -4,7 +4,7 @@ export default {
 		year: {
 			type: String,
 			required: false,
-			default: ''
+			default: ' '
 		},
 		title: {
 			type: String,
@@ -44,116 +44,117 @@ export default {
 /* DESKTOP*/
 @media only screen and (min-width: 801px) {
 	.life-time-main-container {
-	padding-left: 20px;
-	display: flex;
-	height: 20%;
-	.circle-container {
+		padding-left: 20px;
 		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
-		width: 10px;
-		.circle {
-			border: 1px solid var(--white);
-			border-radius: 50%;
-			height: 10px;
-			width: 10px;
-			background: var(--white);
-		}
-		.line {
-			display: flex;
-			border: 1px solid var(--white);
-			height: 100%;
-			width: 3px;
-			background-color: var(--white);
-		}
-	}
-	.information-container {
-		display: flex;
-		margin-top: -10px;
-		.line-container {
-			width: 5%;
+		height: 20%;
+		.circle-container {
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			flex-direction: column;
+			width: 10px;
+			.circle {
+				border: 1px solid var(--white);
+				border-radius: 50%;
+				height: 10px;
+				width: 10px;
+				background: var(--white);
+			}
 			.line {
+				display: flex;
 				border: 1px solid var(--white);
 				height: 100%;
 				width: 3px;
 				background-color: var(--white);
 			}
 		}
-		.information {
-			margin-left: 10px;
-			margin-bottom: 20px;
-			width: 95%;
-			.year {
-				color: var(--grey);
+		.information-container {
+			display: flex;
+			margin-top: -25px;
+			.line-container {
+				width: 5%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				.line {
+					border: 1px solid var(--white);
+					height: 100%;
+					width: 3px;
+					background-color: var(--white);
+				}
 			}
-			.title {
-				font-weight: 600;
+			.information {
+				margin-left: 10px;
+				margin-bottom: 20px;
+				width: 95%;
+				.year {
+					height: 20px;
+					color: var(--grey);
+				}
+				.title {
+					font-weight: 600;
+				}
 			}
 		}
 	}
-}
 }
 
 /* MOBILE */
 @media only screen and (max-width: 800px) {
 	.life-time-main-container {
-	padding-left: 20px;
-	display: flex;
-	height: 20%;
-	.circle-container {
+		padding-left: 20px;
 		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
-		width: 10px;
-		.circle {
-			border: 1px solid var(--white);
-			border-radius: 50%;
-			height: 10px;
-			width: 10px;
-			background: var(--white);
-		}
-		.line {
-			display: flex;
-			border: 1px solid var(--white);
-			height: 100%;
-			width: 3px;
-			background-color: var(--white);
-		}
-	}
-	.information-container {
-		display: flex;
-		margin-top: -10px;
-		padding-bottom: 30px;
-		.line-container {
-			width: 5%;
+		.circle-container {
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			flex-direction: column;
+			width: 10px;
+			.circle {
+				border: 1px solid var(--white);
+				border-radius: 50%;
+				height: 10px;
+				width: 10px;
+				background: var(--white);
+			}
 			.line {
+				display: flex;
 				border: 1px solid var(--white);
 				height: 100%;
 				width: 3px;
 				background-color: var(--white);
 			}
 		}
-		.information {
-			margin-left: 10px;
-			margin-bottom: 20px;
-			width: 95%;
-			.year {
-				color: var(--grey);
+		.information-container {
+			display: flex;
+			margin-top: -25px;
+			padding-bottom: 30px;
+			.line-container {
+				width: 5%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				.line {
+					border: 1px solid var(--white);
+					height: 100%;
+					width: 3px;
+					background-color: var(--white);
+				}
 			}
-			.title {
-				font-weight: 600;
+			.information {
+				margin-left: 10px;
+				margin-bottom: 20px;
+				width: 95%;
+				.year {
+					height: 20px;
+					color: var(--grey);
+				}
+				.title {
+					font-weight: 600;
+				}
 			}
 		}
 	}
-}
 }
 
 </style>

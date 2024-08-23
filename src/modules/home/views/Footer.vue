@@ -158,8 +158,11 @@ export default {
 			.content-container {
 				width: 50%;
 				margin: 20px 0;
+				.logo {
+					height: 100px;
+				}
 				p {
-					font-size: 1.5rem;
+					font-size: 1.2rem;
 				}
 			}
 			.content-links-containers {
@@ -208,6 +211,7 @@ export default {
 		.copy-container {
 			display: flex;
 			justify-content: space-between;
+			margin-top: 10px;
 		}
 	}
 }

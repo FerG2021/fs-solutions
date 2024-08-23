@@ -173,7 +173,7 @@ export default {
 				height: calc((100vh - 50px) - 30%);
 				width: 80%;
 				border-radius: 20px;
-				background-color: var(--primary);
+				background-color: var(--purple-light);
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: center;
