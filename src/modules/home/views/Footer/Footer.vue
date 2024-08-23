@@ -1,5 +1,5 @@
 <script>
-import Logo from '../../../assets/fs-solutions.png';
+import Logo from '../../../../assets/fs-solutions.png';
 
 export default {
 	name: 'FooterComponent',
@@ -76,10 +76,14 @@ export default {
 </script>
 
 <template>
-	<div class="footer-main-container">
+	<footer class="footer-main-container">
 		<div class="footer-container">
 			<div class="content-container">
-				<img :src="logo" class="logo">
+				<img
+					:src="logo"
+					class="logo"
+					alt="logo"
+				>
 				<p> {{  $t('FOOTER_SECTION.MESSAGE')  }} </p>
 			</div>
 			<div class="content-links-containers">
@@ -141,7 +145,7 @@ export default {
 				</span>
 			</div>
 		</div>
-	</div>
+	</footer>
 </template>
 
 <style lang="scss" scoped>

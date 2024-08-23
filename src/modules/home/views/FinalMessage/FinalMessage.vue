@@ -1,7 +1,7 @@
 <script>
-import DynamicButton from '../../../components/DynamicButton.vue';
-import SectionTitle from '../../../components/SectionTitle.vue';
-import { goToCalendly } from '../../../utils/utils';
+import DynamicButton from '../../../../components/DynamicButton.vue';
+import SectionTitle from '../../../../components/SectionTitle.vue';
+import { goToCalendly } from '../../../../utils/utils';
 
 export default {
 	components: {

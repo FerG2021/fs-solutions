@@ -44,6 +44,7 @@ export default {
 				@mouseover="onHoverImage"
 				@mouseout="unhoverImage"
 				class="animate__animated animate__fadeIn"
+				alt="project-image"
 			>
 		</div>
 		<div class="title-subtitle-container">

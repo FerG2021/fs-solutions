@@ -1,6 +1,6 @@
 <script>
-import DynamicButton from '../../../components/DynamicButton.vue';
-import SectionTitle from '../../../components/SectionTitle.vue';
+import DynamicButton from '../../../../components/DynamicButton.vue';
+import SectionTitle from '../../../../components/SectionTitle.vue';
 
 import LineTimeItem from './LineTimeItem.vue';
 

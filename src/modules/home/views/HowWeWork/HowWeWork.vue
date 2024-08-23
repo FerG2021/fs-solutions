@@ -1,13 +1,10 @@
 <script>
-import Figma from '../../../assets/figma.webp';
-import FinishProject from '../../../assets/finish-project.png';
-import FirstMeet from '../../../assets/first-meet.png';
-import HTML from '../../../assets/html.webp';
-import JS from '../../../assets/js.png';
-import StartProject from '../../../assets/start-project.png';
-import Vue from '../../../assets/vue.svg';
-import DynamicButton from '../../../components/DynamicButton.vue';
-import { goToCalendly } from '../../../utils/utils';
+import Figma from '../../../../assets/figma.webp';
+import FinishProject from '../../../../assets/finish-project.png';
+import FirstMeet from '../../../../assets/first-meet.png';
+import StartProject from '../../../../assets/start-project.png';
+import DynamicButton from '../../../../components/DynamicButton.vue';
+import { goToCalendly } from '../../../../utils/utils';
 
 import Steps from './Steps.vue';
 
@@ -19,9 +16,6 @@ export default {
 	data() {
 		return {
 			figma: Figma,
-			vue: Vue,
-			js: JS,
-			html: HTML,
 			firstMeet: FirstMeet,
 			startProject: StartProject,
 			finishProject: FinishProject,
@@ -111,21 +105,21 @@ export default {
 				<img
 					v-if="isFirstStepHovered"
 					:src="firstMeet"
-					alt="Imagen"
+					alt="firstMeet"
 					class="animated-image animate__animated animate__zoomIn"
 				/>
 
 				<img
 					v-if="isSecondStepHovered"
 					:src="startProject"
-					alt="Imagen"
+					alt="startProject"
 					class="animated-image animate__animated animate__zoomIn"
 				/>
 
 				<img
 					v-if="isThirdStepHovered"
 					:src="finishProject"
-					alt="Imagen"
+					alt="finishProject"
 					class="animated-image animate__animated animate__zoomIn"
 				/>
 			</div>
@@ -158,6 +152,7 @@ export default {
 				}
 			}
 			.how-we-work-legend {
+				font-weight: 600;
 				font-size: 2rem;
 			}
 			.how-we-work-information {

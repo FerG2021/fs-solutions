@@ -1,5 +1,5 @@
 <script>
-import { goToGoogleMaps, goToWhatsApp } from '../../../utils/utils';
+import { goToGoogleMaps, goToWhatsApp } from '../../../../utils/utils';
 
 import ContactForm from './ContactForm.vue';
 import ContactUsItem from './ContactUsItem.vue';

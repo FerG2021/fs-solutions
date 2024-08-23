@@ -1,13 +1,13 @@
 <script>
-import AboutUs from './views/AboutUs.vue';
-import ContactUs from './views/ContactUs.vue';
-import FinalMessage from './views/FinalMessage.vue';
-import FollowUs from './views/FollowUs.vue';
-import FooterVue from './views/Footer.vue';
-import HowWeWork from './views/HowWeWork.vue';
-import MainSection from './views/MainSection.vue';
-import Projects from './views/Projects.vue';
-import Services from './views/Services.vue';
+import AboutUs from './views/AboutUs/AboutUs.vue';
+import ContactUs from './views/ContactUs/ContactUs.vue';
+import FinalMessage from './views/FinalMessage/FinalMessage.vue';
+import FollowUs from './views/FollowUs/FollowUs.vue';
+import FooterVue from './views/Footer/Footer.vue';
+import HowWeWork from './views/HowWeWork/HowWeWork.vue';
+import MainSection from './views/MainSection/MainSection.vue';
+import Projects from './views/Projects/Projects.vue';
+import Services from './views/Services/Services.vue';
 
 export default {
 	name: 'HomeComponent',
@@ -21,40 +21,36 @@ export default {
 		ContactUs,
 		FinalMessage,
 		FooterVue
+	},
+	data() {
+		return {
+			itemsSection: [
+				'MainSection',
+				'HowWeWork',
+				'Services',
+				'Projects',
+				'AboutUs',
+				'FollowUs',
+				'ContactUs',
+				'FinalMessage',
+				'FooterVue'
+			]
+		};
 	}
 };
 </script>
 
 <template>
-	<div class="main-container">
-		<section id="MainSection">
-			<MainSection />
-		</section>
-		<section id="HowWeWork">
-			<HowWeWork />
-		</section>
-		<section id="Services">
-			<Services />
-		</section>
-		<section id="Projects">
-			<Projects />
-		</section>
-		<section id="AboutUs">
-			<AboutUs />
-		</section>
-		<section id="FollowUs">
-			<FollowUs />
-		</section>
-		<section id="ContactUs">
-			<ContactUs />
-		</section>
-		<section id="FinalMessage">
-			<FinalMessage />
-		</section>
-		<section id="FooterVue">
-			<FooterVue />
-		</section>
-	</div>
+	<main class="main-container">
+		<template
+			v-for="item in itemsSection"
+			:key="item"
+		>
+			<section :id="item">
+				<component :is='item' />
+			</section>
+		</template>
+	</main>
 </template>
 
 <style>

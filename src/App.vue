@@ -15,7 +15,6 @@ export default {
 		<MainHeader />
 		<Home />
 	</div>
-	<!-- <router-view></router-view> -->
 </template>
 
 <style lang="scss">
@@ -25,7 +24,6 @@ body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	// font-family: 'Poppins', sans-serif;
 	font-family: "Inter", sans-serif;
 	.p-button-label {
 		padding: 5px;

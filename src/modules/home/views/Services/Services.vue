@@ -1,5 +1,5 @@
 <script>
-import SectionTitle from '../../../components/SectionTitle.vue';
+import SectionTitle from '../../../../components/SectionTitle.vue';
 
 import ServiceItem from './ServiceItem.vue';
 
@@ -55,7 +55,10 @@ export default {
 			</p>
 		</div>
 		<div class="services-container">
-			<template v-for="item in serviceItems" :key="item">
+			<template
+				v-for="item in serviceItems"
+				:key="item"
+			>
 				<ServiceItem
 					:icon="item.icon"
 					:title="item.title"
@@ -66,7 +69,7 @@ export default {
 		</div>
 		<div class="final-message">
 			<span class="icon">
-				<i class="pi pi-spin pi-globe"></i>
+				<i class="pi pi-spin pi-globe" />
 			</span>
 			<span class="text">
 				{{ $t('SERVICES.FINAL_MESSAGE') }}

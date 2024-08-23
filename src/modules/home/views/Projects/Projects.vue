@@ -1,13 +1,13 @@
 <script>
-import SectionTitle from '../../../components/SectionTitle.vue';
-import BurgerHover from '../img/burguer-hover.png';
-import Burger from '../img/burguer.png';
-import LalaHover from '../img/lala-hover.png';
-import Lala from '../img/lala.png';
-import LaloHover from '../img/lalo-hover.png';
-import Lalo from '../img/lalo.png';
-import ModularHover from '../img/modular-hover.png';
-import Modular from '../img/modular.png';
+import SectionTitle from '../../../../components/SectionTitle.vue';
+import BurgerHover from '../../img/burguer-hover.png';
+import Burger from '../../img/burguer.png';
+import LalaHover from '../../img/lala-hover.png';
+import Lala from '../../img/lala.png';
+import LaloHover from '../../img/lalo-hover.png';
+import Lalo from '../../img/lalo.png';
+import ModularHover from '../../img/modular-hover.png';
+import Modular from '../../img/modular.png';
 
 import ProjectItem from './ProjectItem.vue';
 

@@ -1,6 +1,6 @@
 <script>
-import DynamicButton from '../../../components/DynamicButton.vue';
-import { goToCalendly, scrollTo } from '../../../utils/utils';
+import DynamicButton from '../../../../components/DynamicButton.vue';
+import { goToCalendly, scrollTo } from '../../../../utils/utils';
 
 export default {
 	components: { DynamicButton },
@@ -61,7 +61,6 @@ export default {
 					:icon="'star'"
 				/>
 			</a>
-
 		</div>
 	</div>
 </template>
@@ -70,7 +69,7 @@ export default {
 /* DESKTOP*/
 @media only screen and (min-width: 801px) {
 	.main-section-container {
-		background-image: url('../img/main-image.svg');
+		background-image: url('../../img/main-image.svg');
 		height: calc(100vh - 50px);
 		margin-top: 50px;
 		background-size: cover;
@@ -104,7 +103,6 @@ export default {
 					display: inline-block;
 					max-width: 0;
 					animation: typing 4s steps(30, end) 1s infinite, blink 0.75s step-end infinite;
-
 					@keyframes typing {
 						0% {
 							max-width: 0;
@@ -155,7 +153,7 @@ export default {
 /* MOBILE */
 @media only screen and (max-width: 800px) {
 	.main-section-container {
-		background-image: url('../img/main-image.svg');
+		background-image: url('../../img/main-image.svg');
 		height: calc(100vh - 50px);
 		margin-top: 50px;
 		background-size: cover;

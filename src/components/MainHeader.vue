@@ -14,10 +14,6 @@ export default {
 		return {
 			logo: LogoIcon,
 			itemsSections: [
-				// {
-				// 	label: this.$t('SECTIONS.HOME'),
-				// 	href: 'MainSection'
-				// },
 				{
 					label: this.$t('SECTIONS.HOW_WORK'),
 					href: 'HowWeWork'
@@ -38,10 +34,6 @@ export default {
 					label: this.$t('SECTIONS.FOLLOW_US'),
 					href: 'FollowUs'
 				}
-				// {
-				// 	label: this.$t('SECTIONS.CONTACT_US'),
-				// 	href: 'ContactUs'
-				// }
 			],
 			isScrolled: false
 		};
@@ -59,8 +51,6 @@ export default {
 			this.isScrolled = window.scrollY > 0;
 		},
 		clickScrollTo(sectionId) {
-			console.log('click');
-
 			scrollTo(sectionId);
 		},
 		clickOpenSideBar() {
@@ -81,7 +71,7 @@ export default {
 </script>
 
 <template>
-	<div
+	<header
 		class="header-container"
 		:class="{'header-scrolled': isScrolled}"
 	>
@@ -90,6 +80,7 @@ export default {
 				:src="logo"
 				class="logo"
 				@click.prevent="clickScrollTo(`MainSection`)"
+				alt="logo"
 			>
 		</div>
 		<div class="sections-container">
@@ -130,9 +121,12 @@ export default {
 				<i class="pi pi-align-justify" />
 			</button>
 		</div>
-	</div>
+	</header>
 
-	<SidebarHeader ref="sidebarheader" :itemsSection="itemsSections"/>
+	<SidebarHeader
+		ref="sidebarheader"
+		:itemsSection="itemsSections"
+	/>
 </template>
 
 <style lang="scss" scoped>
